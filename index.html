@@ -46,7 +46,7 @@
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
         <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>下一条</button>
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>下一页</button>
             <p class="tip" v-else>加载中</p>
         </div>
     </main>
