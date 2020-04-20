@@ -63,6 +63,7 @@
     AV.init({
         appId: "VXV7vwryJggmdYb9rYBYkzAj-MdYXbMMI", //你的 leancloud 应用 id （设置-应用keys-AppID）
         appKey: "afgJ0ILkN981AJDhtoDSq78a", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
+        //serverURLs: '国际版可删除该行，否则必须在后台绑定域名并填写在此'
     });
 
     var query = new AV.Query('content');
@@ -93,7 +94,7 @@
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
             if (results.length == 0) {
-                alert('之前没 b 过了')
+                alert('没了。')
             } else {
                 let resC = results;
                 reqData = false;
