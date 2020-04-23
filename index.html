@@ -3,7 +3,7 @@
 
 <head>
     <title>Vio.M</title>
-    <link rel="shortcut icon" href="./icon/Logo-8.0@0.5x.png" />
+    <link rel="shortcut icon" href="./icon/Logo-8.0.png" />
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css"></link>
     <link href="https://fonts.loli.net/css?family=Noto+Serif+SC:200,300,900&display=swap&subset=chinese-simplified" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
@@ -28,6 +28,19 @@
         padding-bottom: 0.6em;
         border-bottom: 3px dashed #d0d0d0;  /* 虚线分割 */
     }
+    h1:before {
+        content:'';
+        background-image:url(./icon/Logo-8.0.png);
+        display:inline-block;
+        width:1em;
+        height:1em;
+        background-size:1em;
+        background-position:left center;
+        background-repeat:no-repeat;
+        padding-right: 0.3em;
+        border-right: 2px solid #000;
+        position:relative;
+    }
     strong {
         color: #2EA9DF;
     }
@@ -35,7 +48,9 @@
 
 <body>
     <header id="header">
-        <h1>Vio 的生活碎片</h1>
+        <h1>
+            Vio 的生活碎片
+        </h1>
     </header>
     <main id="app">
         <aside>
@@ -138,6 +153,11 @@
         }
         h1 {
             color: #F3F3F2;
+            
+        }
+        h1:before {
+            background-image:url(./icon/Inversed-Logo-8.0.png);
+            border-right: 2px solid #fff;
         }
         aside {
             color: #ccc;
